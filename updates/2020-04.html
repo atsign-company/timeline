@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The @ Company Update - May 2020</title>
+    <title>The @ Company Update - April 2020</title>
     <link rel="stylesheet" href="../timelinestyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
-<a href="2020-06.html" class="previous previous-next">&#8249;</a>
-<a href="2020-04.html" class="next previous-next">&#8250;</a>
+<a href="2020-05.html" class="previous previous-next">&#8249;</a>
+<a href="2020-03.html" class="next previous-next">&#8250;</a>
 <div class="back">
     <div class="back-circle"> </div>
     <div class="back-text"> <a href="../index.html">Back to Timeline</a>
@@ -19,8 +19,238 @@
     <div class="update-container">
         <div class="content">
             <img src="img/logo-update.png" alt="The @ Company Logo" class="logo-update">
-            <h2>The @ Company Update - May 2020</h2>
-
+            <h2>The @ Company Update - April 2020</h2>
+            <p>I hope this finds you well and safe during these difficult times.</p>
+            
+            <p>The @ Company continues to make some great progress even during these difficult times. Here is the
+                latest update.</p>
+            
+            <p><strong>Website</strong></p>
+            <p>If you haven&rsquo;t been to our new website, please <a href="https://www.atsign.com">check it out
+                here</a> and give us feedback.</p>
+            
+            <p><strong>Registrar</strong></p>
+            <p>We have worked through many of the bugs with the registrar site and are ready for more people to try
+                it out. If you reserved an @sign with us and haven&rsquo;t bought it yet, let me know and I will make
+                sure to get you an invite. If you want to reserve an @sign or just try out the registration, please
+                let me know. We have some really fun free @signs to pick from as well as premium @signs.</p>
+            
+            <p>We are just one month short of our first year and we already have revenue!</p>
+            
+            <p><strong>Technology</strong></p>
+            <p>In preparation for release as open source, the whole @ protocol stack has been reviewed and a fully
+                abstracted software specification has been developed by the Renascence team. This allows the same
+                software architecture to be used in the future but the ability for us or third party developers to
+                use other underlying components.</p>
+            <p></p>
+            <p>For example, for the root server we use a Redis database because it&rsquo;s fast and scalable, but in
+                the future if a new technology is better we can now easily move just the database interfaces without
+                touching any other code. This fully abstracted code base is being developed rapidly and the new root
+                server code is now fully functional, the next two sprints will be dedicated to the secondary code base
+                and we feel that much of the root code methods will be reused which reduces our codebase and the chance
+                of bugs.</p>
+            
+            <p>Testing has also been a focus for the Renascence team and we now have unit and functional tests written
+                and automated for the @ protocol stack which helps both the old code base and the new as we transition.
+                The great news is that as new and old code base both talk the @ protocol everything interacts and works
+                seamlessly, which is expected behaviour but very nice to see.</p>
+            
+            <p>On the infrastructure side we continue to leverage Kubernetes for both the @ protocol and for the
+                website infrastructure. We have experienced outages at both Digital Ocean and Google our cloud
+                providers, but Kubernetes continues to redeploy and recover from issues for us.</p>
+            
+            <p>Continuous integration and continuous delivery (CI/CD) and automation are very important to us and we
+                are using <a href="https://buddy.works/">buddy.works</a> for the website automation and Jenkins for the
+                @protocol automated testing. The buddy.works pipelines are fully deployed and tested allowing our
+                developers to push code and the website to be built and deployed automagically.</p>
+            
+            <p><strong>Applications for the Ecosystem for Launch</strong></p>
+            <p>We have two more applications to add to the list since our last report.</p>
+            <ol>
+                <li>File transfer - a secure, surveillance free file transfer app that feels like AirDrop&trade; for
+                    iPhone or Nearby Sharing&trade; for Android, but it works between all devices and locations, not
+                    just between same device platforms over a LAN connection.</li>
+                <li>Dude app - a sample app to help developers get started. The app can only do one thing and that is
+                    to send a peer-to-peer &ldquo;<a href="https://www.pond5.com/sound-effects/item/41593958-dude-usa-female">dude</a>&rdquo;
+                    sound to another @sign user with the app. The app is mainly intended to be a useful example, but we
+                    also want it to be fun and actually show up in the App Stores.</li>
+            </ol>
+            
+            <p>Note: we are now calling the &ldquo;Find Me&rdquo; app &ldquo;@me&rdquo;; with a mobile version for
+                managing public and private settings and personas and a web app for sharing them publicly with others.</p>
+            
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <p><strong>App</strong></p>
+                    </td>
+                    <td>
+                        <p><strong>Developer</strong></p>
+                    </td>
+                    <td>
+                        <p><strong>Status</strong></p>
+                    </td>
+                    <td>
+                        <p><strong>Beta ETA</strong></p>
+                    </td>
+                    <td>
+                        <p><strong>GA ETA</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>@me (mobile)</p>
+                    </td>
+                    <td>
+                        <p>@ (Renascence)</p>
+                    </td>
+                    <td>
+                        <p><a href="https://xd.adobe.com/view/3fdab494-a8f8-4ed0-765a-9c79025c60d8-49eb/">Designed</a>, in
+                            Development</p>
+                    </td>
+                    <td>
+                        <p>June</p>
+                    </td>
+                    <td>
+                        <p>October</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>@me (web)</p>
+                    </td>
+                    <td>
+                        <p>@ (Ashish Khana)</p>
+                    </td>
+                    <td>
+                        <p><a href="https://xd.adobe.com/view/f6e1715f-f03b-42b9-641a-d945c0a071d2-80d0/">Designed</a>, in
+                            Development</p>
+                    </td>
+                    <td>
+                        <p>June</p>
+                    </td>
+                    <td>
+                        <p>October</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Influencer app</p>
+                    </td>
+                    <td>
+                        <p>@ (Ashish Khana)</p>
+                    </td>
+                    <td>
+                        <p>Concept, pending design</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Julz vault</p>
+                    </td>
+                    <td>
+                        <p>Renascence</p>
+                    </td>
+                    <td>
+                        <p>In Design (<a href="https://www.youtube.com/watch?v=ttvNpz9XAmM&amp;feature=youtu.be">video</a>)</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Contacts (@buzz)</p>
+                    </td>
+                    <td>
+                        <p>Renascence</p>
+                    </td>
+                    <td>
+                        <p>Development started</p>
+                    </td>
+                    <td>
+                        <p>August</p>
+                    </td>
+                    <td>
+                        <p>October</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>LifeSite</p>
+                    </td>
+                    <td>
+                        <p>Lifesite.co</p>
+                    </td>
+                    <td>
+                        <p>Pending</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Dood app</p>
+                    </td>
+                    <td>
+                        <p>@ (Ashish Khana)</p>
+                    </td>
+                    <td>
+                        <p>Concept</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>File transfer</p>
+                    </td>
+                    <td>
+                        <p>@ (@colin)</p>
+                    </td>
+                    <td>
+                        <p>Concept</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                    <td>
+                        <p>TBD</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            
+            <p>Please share any ideas for applications that you would like to see sooner rather than later.</p>
+            
+            <p><strong>People</strong></p>
+            <p>We are engaging with experts for business development and will have a progress update next month on those
+                efforts.</p>
+            
+            <p>If you have any questions or advice, please reach out to me (@barbara), @colin, @kevin, or @k. If you
+                have time on your hands, please spend some cycles thinking about any of our updates and let us know
+                your thoughts, recommendations or ideas for applications! We love that some folks might have some
+                extra brain cycles right now, so feel free to reach out.</p>
+            
+            <p>We hope everyone stays safe!</p>
     </div>
 </div>
 </body>
