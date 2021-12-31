@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The @ Company Update - July 2021</title>
+    <link rel="stylesheet" href="../timelinestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="2021-08.html" class="previous previous-next">&#8249;</a>
+<a href="2021-06.html" class="next previous-next">&#8250;</a>
+<div class="back">
+    <div class="back-circle"> </div>
+    <div class="back-text"> <a href="../index.html">Back to Timeline</a>
+    </div>
+    <div style="clear:both;"> </div>
+    <div class="update-container">
+        <div class="content">
+            <img src="img/logo-update.png" alt="The @ Company Logo" class="logo-update">
+            <h2>The @ Company Update - July 2021</h2>
+            <p>We did our first live stream of <strong>Demo Day</strong>on Friday, which you can
+                <a href="https://www.youtube.com/watch?v=k1Z_CzPjCHI">watch it here</a>. This event featured our
+                interns and hackathon participants showing off their apps. Imagine having an end-to-end
+                encrypted app that you can demo in just two months!&nbsp;</p>
+            <p><strong>Funding</strong> - here is our announcement on our most recent<a href="https://www.prweb.com/releases/internet_optimists_secure_8_million_to_create_a_more_human_internet/prweb18049878.htm">
+
+round of funding</a>.
+                We welcomed Kirk Brown to our board of directors!</p>
+            <p><strong>Culture</strong> - as we grow the company it is really important to us to make sure the
+                company stays nimble, efficient, and fun. We believe that the flatter the company, the more
+                productive it can be, for a number of reasons. I&rsquo;ve started writing some posts on our
+                adventures of growing a flat organization that you can read here:<a href="https://www.linkedin.com/pulse/building-truly-flat-organization-beginning-barbara-tallent/?trackingId=%2BDgnXcfdWmJ4%2BQWlguPwaw%3D%3D">
+                    post 1
+</a>
+                and <a href="https://www.linkedin.com/pulse/building-truly-flat-organization-part-ii-barbara-tallent/?published=t&amp;trackingId=pueYiYCwRee6zxeSF8nm9g%3D%3D">
+                    post 2</a>.</p>
+            <p><a href="https://fhirathack.devpost.com"><strong>FHIR @hack</strong></a> Fast Healthcare Interoperability
+                Resources - we partnered with MayJuun (a group of doctors who are also technologists and are
+                focused on streamlining HealthCare data) and had an extraordinary hackathon. We had more than
+                235 participants from around the world, 38 <a href="https://fhirathack.devpost.com/project-gallery">
+                    project submissions</a>and 27 teams that pitched live to an amazing group of judges.
+                All the winners from the hackathon will now be part of a mentorship program led by both companies.</p>
+            <p><strong>Wavi pages</strong> - here are just a couple of the amazing wavi pages that came out of FHR @hack:</p>
+            <ul>
+                <li><a href="https://wavi.ng/@90daily">@90daily</a></li>
+                <li><a href="https://wavi.ng/@10sound">@10sound</a></li>
+            </ul>
+            <p><a href="https://geekle.us/flutter"><strong>Geekle event</strong></a> - we participated in this Flutter
+                and Dart community event earlier this week that had more than 4000 global participants. We did a
+                session on &ldquo;<a href="https://youtu.be/RvFStiPmKkI?t=2325">End to End Encrypted Everything</a>
+                &rdquo; and also ran a scavenger hunt for the attendees. We also made a wavi page just for the event
+                (@gs21💙e2eee) check it out<a href="https://wavi.ng/@gs21%F0%9F%92%99e2eee">here</a>.</p>
+            <p><strong>@buzz and @mospherePro testing</strong>- this week we tested @buzz and @mospherePro.
+                @mospherePro lets you send multiple files to multiple people - all end-to-end encrypted. We loved
+                them both! Honestly, even though @buzz is designed to share contact info, we ended up using it for
+                photo sharing. It was just so much fun to post photos in our personas. Both worked quickly and
+                flawlessly - congratulations to both teams!</p>
+            <p><strong>New Developer Site</strong> - we are now live with a new and improved developer site
+                (<a href="https://atsign.dev">https://atsign.dev</a>). The new site provides developers with tons
+                of documentation and content, and provides the ability for the open source community to contribute
+                to the documentation itself as well.</p>
+            <p><strong>Bonus</strong>- our Discord community just crossed 750 developers! We had started Discord on a
+                trial basis back around Thanksgiving of 2020 and now it has become our home for the @ platform
+                community. We welcome you to <a href="https://discord.gg/eNYPh5MbAX">join us</a>.</p>
+            <p>On to the techy stuff:</p>
+            <p><strong>Getting free @signs within any @app </strong>are now possible using the latest release of the
+                onboarding widget which uses a published API on the registrar website to allow people to select a
+                free @sign quickly and simply (although we do ask for an email at present, we will not even ask for
+                that in the near future). This has been integrated into the latest versions of the @buzz and @wavi
+                (on the <a href="https://play.google.com/store/apps/details?id=com.atsign.at_settings">Google Play Store</a>
+                and via <a href="https://testflight.apple.com/join/1PtzPJbv">TestFlight on the App Store</a>) apps.
+                Please have a look and let us know what you think.</p>
+            <p>We have completed virtually all of the migration to the <strong>Dart null safety</strong>requirement
+                for our published packages. The remaining ones are due to external dependencies and will be updated
+                as soon as the dependent packages are released that comply with null safety.</p>
+            <p><strong>Docker swarm</strong> <strong>mode</strong> is the technology we use to run and manage the
+                thousands of microservices on the @platform. A couple of months ago we were contacted by the
+                Docker team to say we were using it a little too much. We cycle around each microservice regularly
+                to ensure it is running the latest code and each time we were doing that we pulled information from
+                <a href="http://dockerhub.com">Dockerhub</a>. Docker late last year changed the way they monetise
+                and one new way is charging for pulls over
+                <a href="https://www.docker.com/pricing/resource-consumption-updates">certain limits</a>.</p>
+            <p>This month, we implemented a caching proxy for Docker images that only pulls images if an update
+                is required. This way the Docker team is happy and all our secondary server microservices are
+                kept up to date automatically.</p>
+            <p><strong>IoT ARM and SIM cards. </strong> One of our advisors connected us with a company in the
+                Internet of Things market that has deep experience with Subscriber Identification Modules (SIMs).
+                The idea of using SIM cards to store the @signs cryptographic keys is really interesting, as
+                is using the ARM processor versions of <a href="https://github.com/atsign-foundation/dess">dess</a>.
+                It is early, but we both see the potential for really interesting solutions where IoT devices become
+                part of the &ldquo;End-to-End Encrypted Everything&rdquo; vision of the company.</p>
+            <p>The<strong>Stream verb</strong>is used to connect two @signs via a secondary and provide, what looks
+                like to each device, an end to TCP socket connection. In actuality the secondary is relaying the IP
+                packets between the two devices and can see the data being exchanged. To solve that problem we only
+                encrypted data across the TCP socket. But what if the developer did not have to do that and the SDK
+                took care of it? Enter the use of AES256 streaming mode and Dart&rsquo;s converters and codecs.&nbsp;<br />
+                We can now ensure an encrypted stream from device to device, even if the developer does not encrypt
+                the data before sending. While working on that code we also solved the problem of failed network
+                connections forcing us to restart a whole download. As AES256 does not increase the number of bytes
+                transferred, the stream verb asks for the starting point of the transfer, so if just the last two
+                bytes got lost, they can be requested.</p>
+            <p>The stream verb updates are in testing and will go into production soon.</p>
+            <p>The <strong>Monitor verb</strong> has been made more robust and, like the stream verb, it can now
+                reconnect and ask for any notifications it may have missed. This functionality is also in testing.</p>
+            <p>That&rsquo;s it for this month, I wish you the very best!</p>
+    </div>
+</div>
+</body>
+</html>

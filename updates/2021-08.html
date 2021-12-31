@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The @ Company Update - Aug 2021</title>
+    <link rel="stylesheet" href="../timelinestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="2021-09.html" class="previous previous-next">&#8249;</a>
+<a href="2021-07.html" class="next previous-next">&#8250;</a>
+<div class="back">
+    <div class="back-circle"> </div>
+    <div class="back-text"> <a href="../index.html">Back to Timeline</a>
+    </div>
+    <div style="clear:both;"> </div>
+    <div class="update-container">
+        <div class="content">
+            <img src="img/logo-update.png" alt="The @ Company Logo" class="logo-update">
+            <h2>The @ Company Update - August 2021</h2>
+            <p>The summer has been all about traction with @sign sign ups and working with the Flutter development community. Here are some of the activities and results of this focus:</p>
+            <ul>
+                <li>In May we had an average of 100 new @signs a month. In June and July we grew that to an average of 250 a month and in August/September our target is an average of 500 a month.&nbsp; This growth (while in small numbers) is amazing, especially since this is mostly developers getting their @signs at this point in time.</li>
+                <li>In July we had ~35K twitter impressions and in August the number of impressions was 201K!!! Traction&hellip;.traction&hellip;.traction :-)</li>
+                <li>With the Flutter development community - The team participated in <a href="https://www.youtube.com/watch?v=xkO6vXOF3Ns&amp;t=1s">Flutter Hump Day</a></li>
+                <li>Anthony kicked off the Flutter heart  campaign: in support of the Flutter community we gave away free Flutter (blue heart) @signs, generating over 400 @sign sign ups</li>
+                <li>We started a new short-form video series for Flutter developers called Runtime - <a href="https://youtu.be/SiYZ8FBJUKI">here is the first one</a></li>
+                <li>We are getting ready for our next Hackathon - <a href="https://e2e3athack.devpost.com/"> E2E3 (End-to-End Encrypted Everything) @Hack</a> which is slated for the end of September - this time around, we will be joining forces with <a href="https://www.zariot.com/">Zariot</a>, an IoT Security enterprise from the UK and with University of Berkeley&rsquo;s <a href="https://www.productspace.org/">Product Space group</a></li>
+                <li>Our interns just finished up, we were so excited that the @vento group was able to develop their first Flutter app and get it <a href="https://play.google.com/store/apps/details?id=com.company.vento">published in the app stores</a> (android and apple stores) in just 8 weeks from start to finish!</li>
+            </ul>
+            
+            <h2>App Publisher Model</h2>
+            <p>We have many apps in the development pipeline and last month Kevin worked on honing the concept of an app publisher, much like in the gaming industry. Each person in the company signed up to be the producer of one of the apps making its way through the development process. This person makes sure the developers of the app get everything they need to be a success. I picked @wavi because I just love that app, and the version we are going to be rolling out next month is super cool! BTW, have you seen my <a href="https://wavi.ng/@barbara">@wavi page</a>?</p>
+            
+            <h2>Flat Organization</h2>
+            <p>I continued my series of posts on building a flat organizational structure on LinkedIn, <a href="http://linkedin.com/pulse/flat-organization-people-part-iii-barbara-tallent/?published=t">this one was particularly fun</a> because the team wrote most of it. We also <a href="https://www.linkedin.com/pulse/company-culture-atsigncompany-1e">posted an article about our company culture</a>.</p>
+            
+            <p>Now on to the techy stuff:</p>
+            
+            <h2>rSDK (resilient Software Development Kit)</h2>
+            <p>This week we are releasing a major update to our AtClient SDK (we call the rSDK) with corresponding updates to the SecondaryServer which has already been deployed. The primary goals of these updates are:</p>
+            <ul>
+                <li>Improve the resilience and reporting of status conditions of operations.</li>
+                <li>Introduce the new NotificationService which takes the responsibility for availability and resilience of notification operations. It also provides improved status and error handling to help the application developers provide status feedback in their app.</li>
+                <li>Simplify our method signatures to make it easier for developers to use the SDK.</li>
+                <li>Improve interactive application performance with the new simplified method signatures and the addition of callback methods to avoid blocking for Dart &ldquo;await&rdquo; methods.</li>
+                <li>Improve the SyncService to more reliably synchronize large amounts of data and deal with connection anomalies.</li>
+                <li>Provide backward compatibility while adding the above improvements.</li>
+            </ul>
+            
+            <p>This coming week we will be working with the app developers to help them to implement and test these updates within their applications. If all goes well, we should finally be in a position with them to release reliable and performant applications to the stores that their customers can use and we can begin promoting in earnest. This will be valuable as we go forward for scale with more users on the platform and applications.</p>
+            
+            <h2>Infrastructure</h2>
+            <p>If you take a look at <a href="http://status.atsign.com">status.atsign.com</a> you can see the infrastructure status for the @platform in real-time. This is not news to many of you, but what is news is that we hit 100% uptime for the last 90 days!&nbsp;</p>
+            
+            <h2>@platform Resilience</h2>
+            <p>The platform runs on infrastructure but also provides software infrastructure to the @signs using it. An individual reported that their secondary was acting up on Aug 16th, so we looked at it and fixed the issue, or so we thought. A second person reported the same issue on their @sign the next day and we knew we had a wider problem. After some work developing a tool to check every @sign automatically, we found a few more instances of the issue and the root cause (bug in the secondary code).&nbsp;</p>
+            
+            <p>By Aug 18th, the permanent fix was in place and we now have a bot to query all the @signs in our infrastructure every 15 minutes and report problems via Google Chat. This code will also be open sourced shortly for the people using dess to run on their own infrastructure.&nbsp;</p>
+            
+            <p>We always like to catch issues before they happen, but we also take any reports from people using the @platform, so if you see something please let us know.</p>
+            
+            <p>As always, we have a lot of fun at work - we celebrated National Dog day by sharing pictures of the The @ Company @dogs.</p>
+            <img src="img/dog-days.png" alt="The @ Company Dogs">
+            <p>That is the update for August and the dog days of summer. Thank you for following our journey as we work to make the internet a better place and more fun for everyone.</p>
+            
+    </div>
+</div>
+</body>
+</html>

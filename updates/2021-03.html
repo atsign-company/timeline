@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The @ Company Update - March 2021</title>
+    <link rel="stylesheet" href="../timelinestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="2021-04.html" class="previous previous-next">&#8249;</a>
+<a href="2021-02.html" class="next previous-next">&#8250;</a>
+<div class="back">
+    <div class="back-circle"> </div>
+    <div class="back-text"> <a href="../index.html">Back to Timeline</a>
+    </div>
+    <div style="clear:both;"> </div>
+    <div class="update-container">
+        <div class="content">
+            <img src="img/logo-update.png" alt="The @ Company Logo" class="logo-update">
+            <h2>The @ Company Update - March 2021</h2>
+            <p>I really struggle to bring you just the highlights of what is happening 
+                at The @ Company because there is so much good stuff going on! Here is my attempt at a summary:</p>
+            <ul>
+                <li>Great developer traction</li>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=CPagNFyu5SU">Flutter Humpday last week</a> featured
+                        The @ Company and it was an amazing discussion with the Flutter developer community.</li>
+                    <li>We were featured as a <a href="https://verygood.ventures/blog/top-companies-using-flutter-2021">
+                        Top Flutter Company for 2021</a> by Very Good Ventures in this post alongside Toyota and eBay
+                        Motors &mdash; not bad company!</li>
+                    <li>There have been some great articles and videos by developers about the @platform &mdash;
+                        including <a href="https://www.youtube.com/watch?v=IaDWktBKGqw&amp;t=30s">videos in Spanish</a>.
+                        <a href="https://jtmuller5-98869.medium.com/bd7b2f87ab95">Here is just one</a> of the articles
+                        from one of our developers.</li>
+                    <li>We hit over 700 followers on Twitter and continue to see 50% community growth MoM.</li>
+                </ul>
+                <li>We welcomed <a href="https://www.linkedin.com/in/chrisswan/">Chris Swan</a> to help us build out
+                    our team and infrastructure. I am over the top with enthusiasm for the caliber of people we have
+                    been able to attract. I was so excited by our welcome Zoom with Chris that I wrote this post on
+                    <a href="https://atsigncompany.medium.com/you-cant-create-a-company-culture-when-everyone-is-virtual-really-a120cc89cbcc">The
+                        @ Company Culture</a>. Each person we add to this amazing team adds exponential value and
+                    energy to the whole company</li>
+                <li>We just saw a preview of the demos from the @appathon teams, and I have to tell you that
+                    <strong>Demo Day next Friday is something that you won&rsquo;t want to miss</strong>. Demo Day
+                    starts at 8:00am PDT. If you are not on the invite list, please let me know and I will add you.</li>
+                <li>The @buzz app should be in the app stores next week. It is still at beta level, but we have had
+                    so much fun playing with it in Zoom sessions. Let me know if you want to join us to get you up
+                    and running with the app.</li>
+                <li>Ok, now for the silly fun stuff:</li>
+                <img src="img/waffle.png" alt="waffle with sugar as an at sign" style="float:right;margin-left:20px;">
+                <ul>
+                    <li>If you haven&rsquo;t heard Esther Kao&rsquo;s amazing jingles, be prepared to have them stuck
+                        in your head! <a href="https://drive.google.com/file/d/1PMbEfxtHS9E9xtos6xhMEFdy--NbAE7I/view?usp=sharing">
+                            Jingle 1</a>, <a href="https://drive.google.com/file/d/1n_8CMRzgXiGCmqORTJX9acUe6uhH2_K0/view?usp=sharing">
+                            Jingle 2</a></li>
+                    <li>The marketing team also created
+                        <a href="https://open.spotify.com/playlist/5yJAMJr9gSHA6Ci3JxwSJ4?si=Mxx9PPboT7a-VfGrOnweog&amp;nd=1">The
+                            @ Company playlist</a> on Spotify.</li>
+                    <li>Did you know that it was National Waffle Day last week? Leave it to Jen Monroe to create an @
+                        Company waffle:</li>
+                </ul>
+            </ul>
+            <div style="clear:both;">
+            <p> </p>
+            <p><strong><em>Now for the Techies!</em></strong></p>
+
+            <p><strong>For developers</strong>: Updates have been the main focus of this month for developers. Out of
+                the 26 libraries and applications we have in the open source community, 13 have been updated with more
+                features. We have also open sourced a new demo app that shows how to use some of those new features,
+                the at_cookbook. The cookbook app allows people to share recipes, so it&rsquo;s both&nbsp; a great demo
+                and useful too.</p>
+
+            <p><strong>@operations &amp; @protocol core: </strong>It&rsquo;s been a very interesting month from an
+                DevOps perspective, with some seemingly strange performance issues at the start of the month.</p>
+            <img src="img/load_monitoring.png" alt="load graphs" style="float:left;margin-right:20px;">
+            <p>Back last year we met with the SVP of Engineering at Slack.com to get his perspective on running a
+                global service. His advice was to measure everything, especially customer key touchpoints. We took
+                status.slack.com as a model and put up status.atsign.com, which shows if the infrastructure is up with
+                a customer viewpoint.</p>
+
+            <p>Behind the scenes Slack measures and graphs everything, so we also did the same for our infrastructure,
+                but we still have more to do across our whole stack. But when we started to notice issues of secondary
+                slowness, we referred to the measurements and could see a pattern which helped us engineer a solution,
+                put it in place, and see the results. We also learned that we needed another key measurement which is
+                now added. Thank you Allan for your wisdom back in 2020!</p>
+
+            <p>What was the root cause? We rolled out the notification subsystem 2.0 update, which used a little more
+                memory than the previous version, so the triage fix was to increase that limit on the microservice.</p>
+            
+            <p>Even more interestingly, as we looked into this issue we discovered another deep in the internals of
+                Dart.</p>
+            
+            <p>When we send data into a TLS/TCP stream we expect it to pop out at the other end without seeing any
+                network errors or retransmits. But what we actually saw on large transfers like sync operations were
+                retransmits and errors. It made no sense; we had tested this all in the past.</p>
+            
+            <p>After further analysis we discovered that this was a symptom, not a cause, and that the way we were
+                buffering by adding objects together got very inefficient as the objects got larger. This in turn
+                applied back pressure to the network, hence the network errors.</p>
+            
+            <p>The first fix is to simply change the way to add to the buffer, which worked very well, but has led to
+                us thinking about not buffering as much and dealing with objects as they arrive. While that sounds
+                simple, it's going to be a great engineering task for next month for the core team!</p>
+            
+            <p>In summary, development and operations merged this month and we ended up with some amazing lessons and
+                solutions that improve experience and keep our memory footprint very tight on the @server microservices.</p>
+            
+            <p>If you have read this far, I am impressed! Happy to connect with you any time if you have any questions
+                about all the fun things we are working on.</p>
+    </div>
+</div>
+</body>
+</html>

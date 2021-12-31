@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The @ Company Update - May 2021</title>
+    <link rel="stylesheet" href="../timelinestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="2021-06.html" class="previous previous-next">&#8249;</a>
+<a href="2021-04.html" class="next previous-next">&#8250;</a>
+<div class="back">
+    <div class="back-circle"> </div>
+    <div class="back-text"> <a href="../index.html">Back to Timeline</a>
+    </div>
+    <div style="clear:both;"> </div>
+    <div class="update-container">
+        <div class="content">
+            <img src="img/logo-update.png" alt="The @ Company Logo" class="logo-update">
+            <h2>The @ Company Update - May 2021</h2>
+            <p>Well the @magic is in the air! We have closed on our seed funding round and that announcement will come
+                out shortly.</p>
+            
+            <p><strong>Free @signs in the apps</strong></p>
+            <p>We decided after all the input that the onboarding process was way too complex, so now you can get
+                started immediately and get your free @sign from right inside the app, in just seconds!</p>
+            
+            <p><strong>@buzz</strong></p>
+            <p>We have been experimenting with @buzz and found a platform problem with the protocol which appeared as
+                instability in the apps, but it was rooted in flaky network connections. The core team got right on it
+                and we expect to have a fix out next week which will enable all @apps to function on even the most
+                unstable network connections. But the good news is that @buzz looks awesome! I can&rsquo;t wait to try
+                it with you.</p>
+            
+            <p><strong>@wavi</strong></p>
+            <p>We rebranded @persona to @wavi &mdash; your public space on the Privacy-First web. Soon we will have a
+                way for people to discover your @wavi page (only if you want to be discovered of course!) Here are some
+                fun @wavi pages:</p>
+            <ul>
+                <li><a href="https://wavi.ng/@laurabakerphd">@laurabakerphd</a></li>
+                <li><a href="https://wavi.ng/@jory">@jory</a></li>
+                <li><a href="https://wavi.ng/@thenorthernsoulcombined">@thenorthernsoulcombined</a></li>
+            </ul>
+            
+            <p>Now that the round is closed, we are working through how to maximize our resources to drive adoption.
+                It is important that we preserve the amazing innovative culture of our company in our next phase of
+                growth. We are learning more about how to do this and are becoming fans of the &lsquo;middle managerless
+                organization (MMLO)&rsquo; mode. Here is a
+                <a href="https://corporate-rebels.com/how-to-organize-a-large-organization-without-middle-management/">good
+                    article</a> that describes just what that means.</p>
+            
+            <p><strong><em>Now for the Techies!</em></strong></p>
+            
+            <p><strong>For developers:&nbsp;</strong></p>
+            <p>Writing our code in Dart/Flutter has a number of huge advantages, including being able to run on pretty
+                much any device and reuse code from the server side to the mobile device and back again seamlessly. But
+                because both Dart and Flutter are also being developed as we develop our code, we have to keep up with
+                the latest builds and ensure our code can take advantage of the latest versions. Null Safety is one such
+                example.</p>
+            
+            <p><strong>Null Safety: </strong>Both Flutter and Dart have had some major changes in the last few months as
+                Flutter hit the 2.0 milestone. Along with that milestone is something called &ldquo;Null Safety&rdquo;.
+                Null Safety has the advantages of faster code and less chances of software failures, but we do have to
+                rework all of our code to be null safe. Dart/Flutter developers have seen some of the larger packages
+                becoming null safe and we are doing the same. It&rsquo;s a bottom up task, so the lower level libraries
+                need to be completed first and the widgets come at the end. It will take a while for us to complete
+                everything but we are doing it so as not to be in debt!</p>
+            
+            <p><strong>@operations &amp; @protocol core:&nbsp;</strong></p>
+            <p>Another form of technical debt is operational. To ensure that we keep everything clean operationally
+                in our CI/CD we are fully utilizing GitHub.com. GitHub has a number of features that help us, including
+                GitHub actions, which have been used to automate everything we can including building code, testing,
+                and pushing to production. This can all be seen in our GitHub repos (for example
+                the <a href="https://github.com/atsign-foundation/at_server/actions">at_server repo</a>).&nbsp; The more
+                we automate, the less technical debt we have as we grow.&nbsp;&nbsp;</p>
+            
+            <p>We have been investigating ways we can make the @protocol more reliable under less than perfect network
+                conditions. We have focused on the notification and the monitor verbs and hope to roll out the new code
+                very soon. Behind the scenes, the monitor verb code will take note of the last notification it saw and
+                if the TCP connection drops, it can re-establish and know it has not missed anything. Similarly, the
+                developer can know if the notification that they sent was actually received, along with retry strategies.
+                The ultimate aim here is that the developer will not have to worry about network problems when the SDK
+                and the @protocol are capable of handling them.</p>
+            
+            <p><strong>dess:</strong></p>
+            <p>We mentioned last month we were working on some software to enable people to run their own secondary
+                servers on the hardware platform of their choice. We released the distributed edge secondary
+                server (<a href="https://github.com/atsign-foundation/dess/tree/dess.0.0.1-release.1">dess</a>) this
+                month. People are providing feedback and we will enable the UI part of the registrar website to point
+                your @sign to your infrastructure as soon as next week.</p>
+            
+            <p><strong>Atsign.dev revamp: </strong>We are in the middle of revamping our developer website to improve
+                the quality and usability of our documentation and related resources that developers need to understand
+                and make use of the @platform. You can see what we are working on at the
+                atsign.dev <a href="https://github.com/atsign-foundation/atsign.dev">repo</a> if you would like a sneak
+                peak.</p>
+            <p><strong><br /></strong><strong>Making things nice for external contributors: </strong>Many of these items
+                are being done to improve the organization and hygiene of our open source repos in order to enable and
+                encourage our growing community of developers to contribute to them.</p>
+            
+            <p>We are making progress on our exciting journey and thank you all for joining us on the adventure!</p>
+    </div>
+</div>
+</body>
+</html>
